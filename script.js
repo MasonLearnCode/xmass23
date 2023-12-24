@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
   
-    ctx.font = `${fontSize}px 'Comic Sans MS', cursive, sans-serif`;
+    ctx.font = `${fontSize}px 'Nunito', cursive, sans-serif`;
     ctx.fillStyle = colors[colorIndex];
     ctx.textAlign = "center";
     ctx.fillText(text, x, y);
