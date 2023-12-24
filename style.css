@@ -1,5 +1,3 @@
-/* style.css */
-
 html, body {
   margin: 0;
   height: 100%;
@@ -12,14 +10,12 @@ html, body {
   position: relative;
 }
 
-/* style.css */
-
 @keyframes blink {
   0% {
     color: #B93C3F;
   }
   50% {
-    color: #711414; /* Màu trắng hoặc màu nền của bạn */
+    color: #711414;
   }
   100% {
     color: #B93C3F;
@@ -28,7 +24,7 @@ html, body {
 
 .red {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 2.7vw; /* Đổi giá trị này thành 2.7vw */
+  font-size: 2.7vw;
   text-align: center;
   position: absolute;
   top: 55%;
@@ -37,7 +33,6 @@ html, body {
   padding: 2vw 0;
   animation: blink 0.5555s infinite;
 }
-
 
 .snow {
   position: absolute;
@@ -48,7 +43,9 @@ html, body {
   pointer-events: none;
 }
 
-.snowman {
-  position: absolute;
-  pointer-events: none;
+/* @media query cho các thiết bị di động */
+@media only screen and (max-width: 767px) {
+  .red {
+    font-size: 4vw; /* Điều chỉnh giảm kích thước chữ cho thiết bị di động */
+  }
 }
